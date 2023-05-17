@@ -8,7 +8,7 @@ class Vista:
         self.sense=SenseHat()
         
     def menu(self):
-        print("0. Menú:")
+        print("0. Menú principal:")
         print("1. Medir temperatura")
         print("2. Medir presión")
         print("3. Medir humedad")
