@@ -25,6 +25,24 @@ class Control:
             elif opcion == "4":
                self.vista.mostrar_grafico_temperatura(self.modelo.get_temperaturas())
                opcion="0" 
+            elif opcion == "10":
+               self.vista.mostrar_temperatura(self.modelo.get_valor_max(self.modelo.get_temperaturas))
+               opcion="0" 
+            elif opcion == "11":
+               self.vista.mostrar_presion(self.modelo.get_valor_max(self.modelo.get_presiones))
+               opcion="0" 
+            elif opcion == "12":
+               self.vista.mostrar_humedad(self.modelo.get_valor_max(self.modelo.get_humedades))
+               opcion="0" 
+            elif opcion == "13":
+               self.vista.mostrar_temperatura(self.modelo.get_valor_min(self.modelo.get_temperaturas))
+               opcion="0" 
+            elif opcion == "14":
+               self.vista.mostrar_presion(self.modelo.get_valor_min(self.modelo.get_presiones))
+               opcion="0" 
+            elif opcion == "15":
+               self.vista.mostrar_humedad(self.modelo.get_valor_min(self.modelo.get_humedades))
+               opcion="0" 
            
            
             elif opcion == "s":
