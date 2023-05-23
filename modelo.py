@@ -6,6 +6,8 @@ class Mediciones:
         self.sense=SenseHat()
     
         self.temperaturas=[]
+        #Agregando un array de humedades
+        self.humedades=[]
        
    
    
@@ -18,9 +20,16 @@ class Mediciones:
      
     def get_temperaturas(self):
          return self.temperaturas
-  
-        
+     
+    # Metodos get_humedad y get_humedades: Joaquin, Fran, PabloV 
+    def get_humedad(self):
+        h=round(self.sense.humidity, 2)
+        self.humedades.append(h)
+        return h
     
+    def get_humedades(self):
+        return self.humedades
+     
     def get_valor_medio(self,lista):
        pass
     
@@ -30,9 +39,4 @@ class Mediciones:
     def get_valor_min(self,lista):
        pass    
                                             
-        
-
-
-                
-        
         

@@ -24,8 +24,11 @@ class Vista:
     def mostrar_temperatura(self,t):
         self.sense.show_message("{}C".format(t))
         print(t)
-          
-   
+        
+    # mostramos las humedades Joaquin, Fran, PabloV
+    def mostrar_humedad(self,h):
+        self.sense.show_message("{}HR".format(h))
+        print(h)
     
     def mostrar_valor_medio(self, m, texto):
        pass
