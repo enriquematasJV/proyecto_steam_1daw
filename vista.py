@@ -18,18 +18,29 @@ class Vista:
         print("7. Valor medio de la temperatura")
         print("8. Valor medio de la presión")
         print("9. Valor medio de la humedad")
+        print("10. Valor maximo de la temperatura")
+        print("11. Valor maximo de la presión")
+        print("12. Valor maximo de la humedad")
+        print("13. Valor minimo de la temperatura")
+        print("14. Valor minimo de la presión")
+        print("15. Valor minimo de la humedad")
         print("s. Salir")
         return input("Ingrese la opción deseada: ")
     
     def mostrar_temperatura(self,t):
         self.sense.show_message("{}C".format(t))
         print(t)
+
+    def mostrar_presion(self,t):
+        self.sense.show_message("{}C".format(t))
+        print(t)
+
+    def mostrar_humedad(self,t):
+        self.sense.show_message("{}C".format(t))
+        print(t)
           
-   
-    
     def mostrar_valor_medio(self, m, texto):
        pass
-    
     
     def mostrar_grafico_temperatura (self, temperaturas):
         df_temperatura = pd.DataFrame({'Temperatura': temperaturas})
