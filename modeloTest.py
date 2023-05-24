@@ -1,7 +1,7 @@
 import unittest
 from modelo import Mediciones
 
-class MeidicionTest(unittest.TestCase):
+class ModeloTest(unittest.TestCase):
 
     def setUp(self):
         self.medicion = Mediciones()
