@@ -23,6 +23,8 @@ class Mediciones:
      
     # Metodos get_humedad y get_humedades: Joaquin, Fran, PabloV 
     def get_humedad(self):
+        if self.sense.humidity is None:
+            return None
         h=round(self.sense.humidity, 2)
         self.humedades.append(h)
         return h
