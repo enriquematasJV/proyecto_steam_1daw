@@ -25,8 +25,11 @@ class Control:
             elif opcion == "4":
                self.vista.mostrar_grafico_temperatura(self.modelo.get_temperaturas())
                opcion="0" 
-           
-           
+            elif opcion == "10":
+               while True:
+                   temperatura = modelo.get_temperature()
+                   self.vista.medir_temperatura_continua(self.modelo.get_temperaturas())
+               opcion="0" 
             elif opcion == "s":
                print("¡Hasta luego!")
                break
