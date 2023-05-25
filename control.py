@@ -14,6 +14,8 @@ class Control:
         
         opcion="0"
                          
+            
+            
         while opcion!="s":
     
             if opcion == "0":
