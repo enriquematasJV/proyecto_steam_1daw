@@ -31,6 +31,8 @@ class Vista:
         print("El valor medio de {} es: {}".format(texto, m))
     
     
+    
+    
     def mostrar_grafico_temperatura (self, temperaturas):
         df_temperatura = pd.DataFrame({'Temperatura': temperaturas})
 
