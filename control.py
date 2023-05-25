@@ -25,7 +25,11 @@ class Control:
             elif opcion == "4":
                self.vista.mostrar_grafico_temperatura(self.modelo.get_temperaturas())
                opcion="0" 
-           
+               
+           elif opcion == "7":
+                medio = self.modelo.get_valor_medio(self.modelo.get_temperaturas())
+                self.vista.mostrar_valor_medio(medio, "temperatura")
+                opcion = "0"
            
             elif opcion == "s":
                print("¡Hasta luego!")

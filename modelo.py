@@ -19,7 +19,10 @@ class Mediciones:
     def get_temperaturas(self):
          return self.temperaturas
   
-        
+    def get_valor_medio(self, lista):
+        if len(lista) == 0:
+            return 0
+        return sum(lista) / len(lista)
     
     def get_valor_medio(self,lista):
        pass
