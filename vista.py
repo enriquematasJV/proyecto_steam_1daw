@@ -45,5 +45,8 @@ class Vista:
         # mostrar el gráfico
         plt.show()
         
+   def medir_temperatura_continua(self,temperatura):
+        print("Temperatura actual: {} °C".format(temperatura))
+        time.sleep(1)  # Medir cada segundo     
    
             
