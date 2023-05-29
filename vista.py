@@ -24,7 +24,9 @@ class Vista:
         print("13. Valor minimo de la temperatura")
         print("14. Valor minimo de la presión")
         print("15. Valor minimo de la humedad")
+
         print("16. Medir temperatura continua")
+
         print("s. Salir")
         return input("Ingrese la opción deseada: ")
     
@@ -42,7 +44,6 @@ class Vista:
         print(t)
           
 
- 
     def mostrar_humedad(self,h):
         self.sense.show_message("{}HR".format(h))
         print(h)
@@ -54,9 +55,9 @@ class Vista:
 
 
 
+
     def mostrar_valor_medio(self, m, texto):
         print("El valor medio de {} es: {}".format(texto, m))
-    
     
     
     def mostrar_grafico_temperatura (self, temperaturas):
