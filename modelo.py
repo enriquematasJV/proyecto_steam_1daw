@@ -56,8 +56,8 @@ class Mediciones:
        pass
     
     def get_valor_max(self,lista):
-       pass
+       return max(lista)
     
     def get_valor_min(self,lista):
-       pass    
+       return min(lista)  
                                             
