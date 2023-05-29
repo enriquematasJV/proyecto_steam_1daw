@@ -31,7 +31,9 @@ class Vista:
 
 
     def mostrar_valor_medio(self, m, texto):
-       pass
+        print("El valor medio de {} es: {}".format(texto, m))
+    
+    
     
     
     def mostrar_grafico_temperatura (self, temperaturas):

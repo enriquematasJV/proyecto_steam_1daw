@@ -29,7 +29,10 @@ class Mediciones:
     def get_presiones(self):
         return self.presiones
   
-        
+    def get_valor_medio(self, lista):
+        if len(lista) == 0:
+            return 0
+        return sum(lista) / len(lista)
     
     def get_valor_medio(self,lista):
        pass
