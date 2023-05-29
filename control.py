@@ -19,13 +19,17 @@ class Control:
             if opcion == "0":
                 opcion=self.vista.menu()
             elif opcion == "1":
-                t=self.modelo.get_temperatura()
-                self.vista.mostrar_temperatura(t)
-                opcion="0"
+               t=self.modelo.get_temperatura()
+               self.vista.mostrar_temperatura(t)
+               opcion="0"
             elif opcion == "2":
                 p = self.modelo.get_presion()
                 self.vista.mostrar_presion(p)
                 opcion = "0"
+            elif opcion== "3":
+               h=self.modelo.get_humedad()
+               self.vista.mostrar_humedad(h)
+               opcion="0"
             elif opcion == "4":
 
                self.vista.mostrar_grafico_temperatura(self.modelo.get_temperaturas())
