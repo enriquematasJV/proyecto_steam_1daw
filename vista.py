@@ -24,9 +24,12 @@ class Vista:
     def mostrar_temperatura(self,t):
         self.sense.show_message("{}C".format(t))
         print(t)
-          
-   
     
+    def mostrar_presion(self, p):
+        self.sense.show_message("{} hPa".format(p))
+        print(p)
+
+
     def mostrar_valor_medio(self, m, texto):
         print("El valor medio de {} es: {}".format(texto, m))
     
@@ -47,5 +50,30 @@ class Vista:
         # mostrar el gráfico
         plt.show()
         
-   
+
+   def mostrar_grafico_humedad (self, humedades):
+        df_humedades = pd.DataFrame({'Humedad': humedades})
+
+        # crear un gráfico de línea
+        df_humedades.plot(kind='line')
+
+        # personalizar el gráfico con títulos y etiquetas de los ejes
+        plt.title('Humedad')
+        plt.xlabel('Tiempo (minutos)')
+        plt.ylabel('Humedad (%)')
+
+    def mostrar_grafico_presion (self, presiones):
+        df_presiones = pd.DataFrame({'Presiones': presiones})
+
+        # crear un gráfico de línea
+        df_presiones.plot(kind='line')
+
+        # personalizar el gráfico con títulos y etiquetas de los ejes
+        plt.title('Presion')
+        plt.xlabel('Tiempo (minutos)')
+        plt.ylabel('Hectopascales (hPa)/milibar(mbar)')
+
+
+        # mostrar el gráfico
+        plt.show()
             
